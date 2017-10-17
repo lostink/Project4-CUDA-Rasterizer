@@ -5,14 +5,59 @@ CUDA Rasterizer
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 4**
 
-* (TODO) YOUR NAME HERE
-* Tested on: (TODO) Windows 22, i7-2222 @ 2.22GHz 22GB, GTX 222 222MB (Moore 2222 Lab)
+* Name: Jiahao Liu
+* Tested on: Windows 10, i7-3920XM CPU @ 2.90GHz 3.10 GHz 16GB, GTX 980m SLI 8192MB (personal computer)
 
-### (TODO: Your README)
+Project Description
+======================
 
-*DO NOT* leave the README to the last minute! It is a crucial part of the
-project, and we will not be able to grade you without a good README.
+This project is a implementation of a simple rasterizer using cuda. Mainly implements part of the OpenGL pipeline, the vertex shader to fragment shader.
 
+Features implemented
+======================
+
+* Basic Lambert and Blinn shading.
+* Perspective correct interpolation.
+* Correct color interpolation between points on a primitive.
+* UV texture mapping with bilinear texture filtering and perspective correct texture coordinates.
+* Line rasterization mode.
+* Point cloud rasterization mode.
+
+Rasterization result
+======================
+
+* Perspective correct interpolation
+
+This use normal as color for each point.
+
+![](renders/1.gif)
+
+* Correct color interpolation between points on a primitive.
+
+![](renders/7.gif)
+
+* Basic Lambert and Blinn shading.
+
+![](renders/4.gif)
+
+* UV texture mapping with bilinear texture filtering and perspective correct texture coordinates.
+
+![](renders/2.gif)
+
+![](renders/3.gif)
+
+* Line rasterization mode.
+
+![](renders/5.gif)
+
+* Point cloud rasterization mode.
+
+![](renders/6.gif)
+
+Performance Analysis
+======================
+
+* TODO
 
 ### Credits
 
